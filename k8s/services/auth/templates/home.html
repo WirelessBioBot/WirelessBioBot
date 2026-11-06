@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Главная страница</title>
+    <link rel="stylesheet" href="/static/auth.css">
+</head>
+<body>
+    <div class="container">
+        <div class="app-logo">
+            <div class="logo-circle">МА</div>
+        </div>
+        <h1>Очень важная платформа, прям очень!</h1>
+        <p class="welcome">{{welcome}}</p>
+        <div class="menu">
+            <a href="{{profile_url}}/profile" class="btn">Личный кабинет</a>
+            <a href="/login" class="btn btn-secondary">{{login}}</a>
+            <a href="/register" class="btn btn-secondary">{{register}}</a>
+        </div>
+    </div>
+</body>
+</html>

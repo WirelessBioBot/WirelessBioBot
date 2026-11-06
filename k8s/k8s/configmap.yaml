@@ -1,0 +1,16 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: app-config
+  namespace: project
+  labels:
+    app: user-platform
+data:
+  LOGIN_TITLE: "Вход в систему"
+  REGISTER_TITLE: "Регистрация"
+  WELCOME_MESSAGE: "Добро пожаловать в платформу"
+
+  AUTH_URL: "http://auth-service:8000"
+  AUTH_PUBLIC_URL: "http://localhost:30080"
+  PROFILE_PUBLIC_URL: "http://localhost:30081"
+  NOTIFICATION_URL: "http://notification-service:8000"

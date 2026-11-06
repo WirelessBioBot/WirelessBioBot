@@ -1,0 +1,35 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>{{title}}</title>
+    <link rel="stylesheet" href="/static/auth.css">
+</head>
+<body>
+    <div class="container">
+        <div class="app-logo">
+            <div class="logo-circle">→</div>
+        </div>
+        <h1>{{title}}</h1>
+        {% if error %}
+        <div class="error">
+            {{error}}
+        </div>
+        {% endif %}
+        <form method="post">
+            <div class="form-group">
+                <label>Логин</label>
+                <input type="text" name="username" required placeholder="Введите ваш логин">
+            </div>
+            <div class="form-group">
+                <label>Пароль</label>
+                <input type="password" name="password" required placeholder="Введите пароль">
+            </div>
+            <button type="submit" class="btn">Войти</button>
+        </form>
+        <div class="links">
+            <a href="/">← На главную</a>
+        </div>
+    </div>
+</body>
+</html>
